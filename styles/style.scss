@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+
+:root {
+    font-family: 'Rubik';
+}
+
+body {
+    margin: 0;
+    width: auto;
+}
+
+#first-view{
+    height: 100vh;
+    background-image: url("/sources/red-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#second-view{
+    height: 95vh;
+    background-image: url("/sources/white-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width:auto;
+    height: 12%;
+    background: white;
+    padding: .3em 1em;
+
+    .container {
+        display: flex;
+        place-content: space-between;
+
+        .menu {
+            display: none;
+        }
+    }
+}
+
+.hero {
+    .container{
+        .hero-text {
+            margin: 1.5em .15em 0em;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 4.1em;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 3.1px;
+        }
+
+        .hero-subtext {
+            margin-top: -0.9em;
+            margin-left: .3em;
+            margin-bottom: 0.8em;
+            font-size: 1.3em;
+            color: white;
+            font-weight: bold;
+        }
+
+        .hero-see-more {
+            margin: 0;
+            color: white;
+            font-size: 1em;
+            margin-left: .3em;
+        }
+    }
+}
+
+.contact-with-us {
+    .container {
+        .bar {
+            margin: 0em 1em 0em 1em;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            background-color: white;
+
+            p {
+                text-transform: uppercase;
+                font-size: 1.2em;
+                padding: .9em 0em 1em 1em;
+                margin: 0;
+            }
+    
+            .arrows {
+                margin: 0;
+                padding: .7em 1em 1em 3em;   
+            }
+        }
+    }
+}
+
+.contact-data {
+    .container {
+        .first-data {
+
+            padding-top: 30%;
+            margin: 0 2em 2em 2em;
+
+            p {
+                font-size: 1.2em;
+                margin:  .5em;
+            }
+
+            .bold-text {
+                font-weight: bold;
+            }
+        }
+
+        .second-data {
+            
+            margin: 2em;
+            
+            p {
+                font-size: 1.2em;
+                margin:  .5em;
+            }
+        }
+
+        .third-data {
+
+            margin: 2em;
+
+            p {
+                font-size: 1.2em;
+                margin: .5em;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 5vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh;
+    font-weight: bold;
+    font-size: .8em;
+}
