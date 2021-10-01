@@ -24,6 +24,10 @@ body {
     background-size: cover;
     background-position: center;
 }
+#contact-with-us {
+    height: 10vh;
+    margin: 0 .1em 0;
+}
 
 .navbar {
     width:auto;
@@ -72,20 +76,25 @@ body {
     }
 }
 
-.contact-with-us {
+#contact-with-us {
     .container {
         .bar {
-            margin: 0em 1em 0em 1em;
             position: absolute;
             bottom: 0;
             display: flex;
+            margin: 0em 1em 0em 1em;
             background-color: white;
+            //width: auto;
+            width: 80%;
 
             p {
                 text-transform: uppercase;
-                font-size: 1.2em;
+                font-size: 1em;
                 padding: .9em 0em 1em 1em;
                 margin: 0;
+                vertical-align: middle;
+                line-height: 5vh;
+                //height: 5vh;
             }
     
             .arrows {
@@ -98,37 +107,38 @@ body {
 
 .contact-data {
     .container {
-        .first-data {
-            margin: 0 2em 2em 2em;
-
-            p {
-                font-size: 1.2em;
-                margin:  .5em;
+        .all-data {
+            padding-top: 20%;
+            .first-data {
+                margin: 0 2em 2em 2em;
+    
+                p {
+                    font-size: 1.2em;
+                    margin:  .5em;
+                }
+    
+                .bold-text {
+                    font-weight: bold;
+                }
             }
-
-            .bold-text {
-                font-weight: bold;
-                padding-top: 6em;
+    
+            .second-data {   
+                margin: 2em;
+                
+                p {
+                    font-size: 1.2em;
+                    margin:  .5em;
+                }
             }
-        }
-
-        .second-data {
-            
-            margin: 2em;
-            
-            p {
-                font-size: 1.2em;
-                margin:  .5em;
-            }
-        }
-
-        .third-data {
-
-            margin: 2em;
-
-            p {
-                font-size: 1.2em;
-                margin: .5em;
+    
+            .third-data {
+    
+                margin: 2em;
+    
+                p {
+                    font-size: 1.2em;
+                    margin: .5em;
+                }
             }
         }
     }
@@ -143,4 +153,9 @@ footer {
     line-height: 5vh;
     font-weight: bold;
     font-size: .8em;
+    width: auto;
+
+    p {
+        margin: 0;
+    }
 }

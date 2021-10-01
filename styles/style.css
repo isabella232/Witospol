@@ -24,6 +24,11 @@ body {
   background-position: center;
 }
 
+#contact-with-us {
+  height: 10vh;
+  margin: 0 .1em 0;
+}
+
 .navbar {
   width: auto;
   height: 12%;
@@ -69,56 +74,62 @@ body {
   margin-left: .3em;
 }
 
-.contact-with-us .container .bar {
-  margin: 0em 1em 0em 1em;
+#contact-with-us .container .bar {
   position: absolute;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0em 1em 0em 1em;
   background-color: white;
+  width: 80%;
 }
 
-.contact-with-us .container .bar p {
+#contact-with-us .container .bar p {
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: .9em 0em 1em 1em;
   margin: 0;
+  vertical-align: middle;
+  line-height: 5vh;
 }
 
-.contact-with-us .container .bar .arrows {
+#contact-with-us .container .bar .arrows {
   margin: 0;
   padding: .7em 1em 1em 3em;
 }
 
-.contact-data .container .first-data {
+.contact-data .container .all-data {
+  padding-top: 20%;
+}
+
+.contact-data .container .all-data .first-data {
   margin: 0 2em 2em 2em;
 }
 
-.contact-data .container .first-data p {
+.contact-data .container .all-data .first-data p {
   font-size: 1.2em;
   margin: .5em;
 }
 
-.contact-data .container .first-data .bold-text {
+.contact-data .container .all-data .first-data .bold-text {
   font-weight: bold;
-  padding-top: 6em;
 }
 
-.contact-data .container .second-data {
+.contact-data .container .all-data .second-data {
   margin: 2em;
 }
 
-.contact-data .container .second-data p {
+.contact-data .container .all-data .second-data p {
   font-size: 1.2em;
   margin: .5em;
 }
 
-.contact-data .container .third-data {
+.contact-data .container .all-data .third-data {
   margin: 2em;
 }
 
-.contact-data .container .third-data p {
+.contact-data .container .all-data .third-data p {
   font-size: 1.2em;
   margin: .5em;
 }
@@ -132,5 +143,10 @@ footer {
   line-height: 5vh;
   font-weight: bold;
   font-size: .8em;
+  width: auto;
+}
+
+footer p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
