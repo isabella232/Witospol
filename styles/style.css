@@ -69,7 +69,7 @@ body {
   margin-left: .3em;
 }
 
-.container .bar {
+.contact-with-us .container .bar {
   margin: 0em 1em 0em 1em;
   position: absolute;
   bottom: 0;
@@ -79,46 +79,46 @@ body {
   background-color: white;
 }
 
-.container .bar p {
+.contact-with-us .container .bar p {
   text-transform: uppercase;
   font-size: 1.2em;
   padding: .9em 0em 1em 1em;
   margin: 0;
 }
 
-.container .bar .arrows {
+.contact-with-us .container .bar .arrows {
   margin: 0;
   padding: .7em 1em 1em 3em;
 }
 
-.container .first-data {
+.contact-data .container .first-data {
   padding-top: 30%;
   margin: 0 2em 2em 2em;
 }
 
-.container .first-data p {
+.contact-data .container .first-data p {
   font-size: 1.2em;
   margin: .5em;
 }
 
-.container .first-data .bold-text {
+.contact-data .container .first-data .bold-text {
   font-weight: bold;
 }
 
-.container .second-data {
+.contact-data .container .second-data {
   margin: 2em;
 }
 
-.container .second-data p {
+.contact-data .container .second-data p {
   font-size: 1.2em;
   margin: .5em;
 }
 
-.container .third-data {
+.contact-data .container .third-data {
   margin: 2em;
 }
 
-.container .third-data p {
+.contact-data .container .third-data p {
   font-size: 1.2em;
   margin: .5em;
 }
