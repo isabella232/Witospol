@@ -50,11 +50,11 @@ body {
   text-transform: uppercase;
   font-size: 4.1em;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3.1px;
+  -webkit-text-stroke-width: 2.7px;
 }
 
 .hero .container .hero-subtext {
-  margin-top: -0.9em;
+  margin-top: -0.55em;
   margin-left: .3em;
   margin-bottom: 0.8em;
   font-size: 1.3em;
@@ -69,7 +69,7 @@ body {
   margin-left: .3em;
 }
 
-.contact-with-us .container .bar {
+.container .bar {
   margin: 0em 1em 0em 1em;
   position: absolute;
   bottom: 0;
@@ -79,46 +79,46 @@ body {
   background-color: white;
 }
 
-.contact-with-us .container .bar p {
+.container .bar p {
   text-transform: uppercase;
   font-size: 1.2em;
   padding: .9em 0em 1em 1em;
   margin: 0;
 }
 
-.contact-with-us .container .bar .arrows {
+.container .bar .arrows {
   margin: 0;
   padding: .7em 1em 1em 3em;
 }
 
-.contact-data .container .first-data {
+.container .first-data {
   padding-top: 30%;
   margin: 0 2em 2em 2em;
 }
 
-.contact-data .container .first-data p {
+.container .first-data p {
   font-size: 1.2em;
   margin: .5em;
 }
 
-.contact-data .container .first-data .bold-text {
+.container .first-data .bold-text {
   font-weight: bold;
 }
 
-.contact-data .container .second-data {
+.container .second-data {
   margin: 2em;
 }
 
-.contact-data .container .second-data p {
+.container .second-data p {
   font-size: 1.2em;
   margin: .5em;
 }
 
-.contact-data .container .third-data {
+.container .third-data {
   margin: 2em;
 }
 
-.contact-data .container .third-data p {
+.container .third-data p {
   font-size: 1.2em;
   margin: .5em;
 }

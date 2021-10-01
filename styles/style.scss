@@ -51,11 +51,11 @@ body {
             text-transform: uppercase;
             font-size: 4.1em;
             -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 3.1px;
+            -webkit-text-stroke-width: 2.7px;
         }
 
         .hero-subtext {
-            margin-top: -0.9em;
+            margin-top: -0.55em;
             margin-left: .3em;
             margin-bottom: 0.8em;
             font-size: 1.3em;
@@ -72,31 +72,28 @@ body {
     }
 }
 
-.contact-with-us {
-    .container {
-        .bar {
-            margin: 0em 1em 0em 1em;
-            position: absolute;
-            bottom: 0;
-            display: flex;
-            background-color: white;
+.container {
+    .bar {
+        margin: 0em 1em 0em 1em;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        background-color: white;
 
-            p {
-                text-transform: uppercase;
-                font-size: 1.2em;
-                padding: .9em 0em 1em 1em;
-                margin: 0;
-            }
-    
-            .arrows {
-                margin: 0;
-                padding: .7em 1em 1em 3em;   
-            }
+        p {
+            text-transform: uppercase;
+            font-size: 1.2em;
+            padding: .9em 0em 1em 1em;
+            margin: 0;
+        }
+
+        .arrows {
+            margin: 0;
+            padding: .7em 1em 1em 3em;   
         }
     }
-}
+    }
 
-.contact-data {
     .container {
         .first-data {
 
@@ -133,7 +130,7 @@ body {
             }
         }
     }
-}
+
 
 footer {
     background-color: black;
