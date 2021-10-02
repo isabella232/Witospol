@@ -10,7 +10,7 @@ body {
 }
 
 #first-view{
-    height: 100vh;
+    height: 85vh;
     background-image: url("/sources/red-background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,19 +25,20 @@ body {
     background-position: center;
 }
 #contact-with-us {
-    height: 10vh;
+    height: 9vh;
     margin: 0 .1em 0;
 }
 
 .navbar {
     width:auto;
-    height: 12%;
+    height: auto;
     background: white;
     padding: .3em 1.7em .5em 1em;
 
     .container {
         display: flex;
         place-content: space-between;
+        height: auto;
 
         .hamburger-menu.active {
             transform: rotate(180deg);
