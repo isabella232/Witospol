@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 :root {
   font-family: 'Rubik';
 }
@@ -9,11 +21,12 @@ body {
 }
 
 #first-view {
-  height: 85vh;
+  height: 90vh;
   background-image: url("/sources/red-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 #second-view {
@@ -25,7 +38,6 @@ body {
 }
 
 #contact-with-us {
-  height: 9vh;
   margin: 0 .1em 0;
 }
 
@@ -127,16 +139,22 @@ body {
   margin-left: .3em;
 }
 
-#contact-with-us .container .bar {
+#contact-with-us {
   position: absolute;
   bottom: 0;
+}
+
+#contact-with-us .container {
+  margin: 0em 2em 0em 2em;
+}
+
+#contact-with-us .container .bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
-  margin: 0em 2em 0em 2em;
   background-color: white;
-  width: 80%;
+  width: 120%;
 }
 
 #contact-with-us .container .bar p {

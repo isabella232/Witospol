@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
 
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
 :root {
     font-family: 'Rubik';
 }
@@ -10,11 +20,12 @@ body {
 }
 
 #first-view{
-    height: 85vh;
+    height: 90vh;
     background-image: url("/sources/red-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 #second-view{
@@ -25,7 +36,7 @@ body {
     background-position: center;
 }
 #contact-with-us {
-    height: 9vh;
+    //height: 9vh;
     margin: 0 .1em 0;
 }
 
@@ -122,15 +133,15 @@ body {
 }
 
 #contact-with-us {
+    position: absolute;
+    bottom: 0;
     .container {
+        margin: 0em 2em 0em 2em;
         .bar {
-            position: absolute;
-            bottom: 0;
             display: flex;
             place-content: space-between;
-            margin: 0em 2em 0em 2em;
             background-color: white;
-            width: 80%;
+            width: 120%;
 
             p {
                 text-transform: uppercase;
