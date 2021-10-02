@@ -33,7 +33,7 @@ body {
   width: auto;
   height: 12%;
   background: white;
-  padding: .3em 1em;
+  padding: .3em 1.7em .5em 1em;
 }
 
 .navbar .container {
@@ -43,8 +43,60 @@ body {
   place-content: space-between;
 }
 
-.navbar .container .menu {
-  display: none;
+.navbar .container .hamburger-menu.active {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+}
+
+.navbar .container .hamburger-menu {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+}
+
+.nav-menu {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 2.5em;
+  margin-top: -2%;
+}
+
+.nav-menu.active {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 2.5em;
+  margin-top: 0%;
+}
+
+.nav-menu.active li:active {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .hero .container .hero-text {
@@ -80,7 +132,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0em 1em 0em 1em;
+  place-content: space-between;
+  margin: 0em 2em 0em 2em;
   background-color: white;
   width: 80%;
 }
@@ -92,11 +145,34 @@ body {
   margin: 0;
   vertical-align: middle;
   line-height: 5vh;
+  width: 80%;
 }
 
-#contact-with-us .container .bar .arrows {
+#contact-with-us .container .bar .arrow-icon {
+  padding: .7em 0em 1em 1em;
   margin: 0;
-  padding: .7em 1em 1em 3em;
+  line-height: 5vh;
+  width: 20%;
+}
+
+#contact-with-us .container .bar .arrow-icon .arrows.active {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+#contact-with-us .container .bar .arrow-icon .arrows {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .contact-data .container .all-data {
@@ -143,7 +219,6 @@ footer {
   line-height: 5vh;
   font-weight: bold;
   font-size: .8em;
-  width: auto;
 }
 
 footer p {

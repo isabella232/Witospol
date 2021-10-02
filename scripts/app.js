@@ -1,21 +1,16 @@
-/*
-const menu = document.querySelector('#mobile-menu');
+const click = document.querySelector('.hamburger-menu');
 const menuLinks = document.querySelector('.nav-menu');
+const arrows = document.querySelector('img.arrows');
 
-menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active');
+click.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
-});
-*/
-$("img.arrows").click(function() {
-    console.log('dziaala');
-    $('html,body').animate({
-        scrollTop: $(".third-data").offset().top},
-        'slow');
+    click.classList.toggle('active');
 });
 
-/*
-$("img.arrow").click(function(){
-    $(this).toggleClass("img.arrow.down")  ; 
+arrows.addEventListener('click', function() {
+    arrows.classList.toggle('active');
+    $('html,body').animate({
+        scrollTop: $(".third-data").offset().top}, 'slow'
+    );
 });
-*/
+

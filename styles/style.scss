@@ -33,15 +33,59 @@ body {
     width:auto;
     height: 12%;
     background: white;
-    padding: .3em 1em;
+    padding: .3em 1.7em .5em 1em;
 
     .container {
         display: flex;
         place-content: space-between;
 
-        .menu {
-            display: none;
+        .hamburger-menu.active {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transition: transform .8s;
         }
+
+        .hamburger-menu {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            transition: transform .8s;
+        }
+    }
+}
+
+.nav-menu {
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 2.5em;
+    margin-top: -2%;
+}
+
+.nav-menu.active {
+    opacity: 1;
+    transition: all 0.3s ease;
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 2.5em;
+    margin-top: 0%;
+
+    li:active{
+        color: red;
+        font-weight: bold;
+        text-decoration: underline;
     }
 }
 
@@ -82,9 +126,9 @@ body {
             position: absolute;
             bottom: 0;
             display: flex;
-            margin: 0em 1em 0em 1em;
+            place-content: space-between;
+            margin: 0em 2em 0em 2em;
             background-color: white;
-            //width: auto;
             width: 80%;
 
             p {
@@ -94,12 +138,28 @@ body {
                 margin: 0;
                 vertical-align: middle;
                 line-height: 5vh;
-                //height: 5vh;
+                width: 80%;
             }
-    
-            .arrows {
+            
+            .arrow-icon {
+                padding: .7em 0em 1em 1em;
                 margin: 0;
-                padding: .7em 1em 1em 3em;   
+                line-height: 5vh;
+                width: 20%;
+    
+                .arrows.active { 
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    transition: transform 1s;  
+                }
+
+                .arrows { 
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    transition: transform 1s;  
+                }
             }
         }
     }
@@ -153,7 +213,6 @@ footer {
     line-height: 5vh;
     font-weight: bold;
     font-size: .8em;
-    width: auto;
 
     p {
         margin: 0;
