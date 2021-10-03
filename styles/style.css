@@ -77,11 +77,13 @@ body {
 
 .navbar .container .hamburger-menu.active #Line_2 {
   display: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar .container .hamburger-menu.active #Line_1 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transform: rotate(45deg) translateY(50%);
           transform: rotate(45deg) translateY(50%);
   -webkit-transform-origin: 50% 50%;
@@ -89,6 +91,8 @@ body {
 }
 
 .navbar .container .hamburger-menu.active #Line_3 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-transform: rotate(-45deg) translateY(50%);
           transform: rotate(-45deg) translateY(50%);
   -webkit-transform-origin: 50% 50%;
@@ -108,8 +112,26 @@ body {
 
 .navbar .container .hamburger-menu #Line_2 {
   display: block;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar .container .hamburger-menu #Line_1 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(0deg) translateY(90%);
+          transform: rotate(0deg) translateY(90%);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.navbar .container .hamburger-menu #Line_3 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(0deg) translateY(10%);
+          transform: rotate(0deg) translateY(10%);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .nav-menu {

@@ -66,13 +66,15 @@ body {
             transition: transform .8s;
             #Line_2 {
                 display: none;
-                transition: all 0.3s ease;
+                transition: all 0.5s ease;
             }
             #Line_1 {
+                transition: all 0.5s ease;
                 transform: rotate(45deg) translateY(50%);
                 transform-origin: 50% 50%;
             }
             #Line_3 {
+                transition: all 0.5s ease;
                 transform: rotate(-45deg) translateY(50%);
                 transform-origin: 50% 50%;
                 
@@ -87,7 +89,17 @@ body {
             transition: transform .8s;
             #Line_2 {
                 display: block;
-                transition: all 0.3s ease;
+                transition: all 0.5s ease;
+            }
+            #Line_1 {
+                transition: all 0.5s ease;
+                transform: rotate(0deg) translateY(90%);
+                transform-origin: 50% 50%;
+            }
+            #Line_3 {
+                transition: all 0.5s ease;
+                transform: rotate(0deg) translateY(10%);
+                transform-origin: 50% 50%; 
             }
         }
     }
