@@ -65,6 +65,7 @@ body {
 }
 
 .navbar .container .hamburger-menu.active {
+  margin: 1.5em 0 1.5em;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -74,7 +75,28 @@ body {
   transition: transform .8s, -webkit-transform .8s;
 }
 
+.navbar .container .hamburger-menu.active #Line_2 {
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar .container .hamburger-menu.active #Line_1 {
+  -webkit-transform: rotate(45deg) translateY(50%);
+          transform: rotate(45deg) translateY(50%);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.navbar .container .hamburger-menu.active #Line_3 {
+  -webkit-transform: rotate(-45deg) translateY(50%);
+          transform: rotate(-45deg) translateY(50%);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
 .navbar .container .hamburger-menu {
+  margin: 1.5em 0 1.5em;
   transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
@@ -82,6 +104,12 @@ body {
   transition: -webkit-transform .8s;
   transition: transform .8s;
   transition: transform .8s, -webkit-transform .8s;
+}
+
+.navbar .container .hamburger-menu #Line_2 {
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-menu {

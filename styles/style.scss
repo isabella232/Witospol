@@ -59,17 +59,36 @@ body {
         }
 
         .hamburger-menu.active {
+            margin: 1.5em 0 1.5em;
             transform: rotate(180deg);
             -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
             transition: transform .8s;
+            #Line_2 {
+                display: none;
+                transition: all 0.3s ease;
+            }
+            #Line_1 {
+                transform: rotate(45deg) translateY(50%);
+                transform-origin: 50% 50%;
+            }
+            #Line_3 {
+                transform: rotate(-45deg) translateY(50%);
+                transform-origin: 50% 50%;
+                
+            }
         }
 
         .hamburger-menu {
+            margin: 1.5em 0 1.5em;
             transform: rotate(-180deg);
             -webkit-transform: rotate(-180deg);
             -ms-transform: rotate(-180deg);
             transition: transform .8s;
+            #Line_2 {
+                display: block;
+                transition: all 0.3s ease;
+            }
         }
     }
 }
